@@ -51,4 +51,4 @@ Run server in development mode
 
 Tests will be created in nearest future
 
-## **P.S.: Files from */config* dir was 'ignored' because of security reasons. References of 'default.json' and 'production.json' you can find in tutorial. (The link was provided above)**
+**P.S.: Files from */config* dir was 'ignored' because of security reasons. References of 'default.json' and 'production.json' you can find in tutorial. (The link was provided above)**
