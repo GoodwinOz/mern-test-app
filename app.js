@@ -9,7 +9,7 @@ const RedirectRoute = require('./routes/redirect.routes')
 
 const app = express()
 
-app.use(helmet())
+// app.use(helmet())
 app.use(express.json({ extended: true }))
 
 app.use('/api/auth', AuthRoute)

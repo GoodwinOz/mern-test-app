@@ -49,6 +49,10 @@ Run server in development mode
 
 ### `npm run test`
 
-Tests will be created in nearest future
+Run functional (e2e; unit; integration) tests. P.S.: Unit tests will be improved.
+
+### `npm run test:nightwatch`
+
+Run UI e2e tests
 
 ## **P.S.: Files from */config* dir was 'ignored' because of security reasons. References of 'default.json' and 'production.json' you can find in tutorial. (The link was provided above)**

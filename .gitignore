@@ -2,3 +2,5 @@
 node_modules
 config/default.json
 config/production.json
+tests_output
+chromedriver.log
