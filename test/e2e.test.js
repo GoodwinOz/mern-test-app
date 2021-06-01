@@ -2,8 +2,8 @@ const request = require('supertest')
 const app = 'localhost:3000'
 const helpers = require('./helpers/integrationHelpers')
 
-describe.only('e2e tests', () => {
-    it('should create user, login as new user, create new link, test new link', async () => {
+describe('e2e tests', () => {
+    it.skip('should create user, login as new user, create new link, test new link', async () => {
         //Creating new user
         // let responseCreateUser = await request(app)
         //     .post(helpers.registerUrl)

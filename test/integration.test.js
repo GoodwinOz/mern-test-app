@@ -3,7 +3,7 @@ const app = 'localhost:3000'
 const helpers = require('./helpers/integrationHelpers')
 
 describe('Integration tests', () => {
-    describe.skip('Testing user routes', () => {
+    describe.skip('Testing user routes', () => { //201 (Green)
         it('should register user', async () => {
             let response = await request(app)
                 .post(helpers.registerUrl)
@@ -47,7 +47,7 @@ describe('Integration tests', () => {
             )
         })
 
-        it.skip('should create a new link', async () => {
+        it.skip('should create a new link', async () => { //201 (green)
             //Logging in to get token
             let responseLogin = await request(app)
                 .post(helpers.loginUrl)
@@ -64,7 +64,7 @@ describe('Integration tests', () => {
                 .set('Accept', 'application/json')
                 .set('Authorization', 'Bearer ' + token)
                 .send({ from: helpers.linkReference })
-            expect(response.status).toBe(500) //???
+            expect(response.status).toBe(201)
         })
     })
 })
