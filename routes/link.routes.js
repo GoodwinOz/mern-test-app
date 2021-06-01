@@ -26,7 +26,8 @@ router.post('/generate', auth, async (req, res) => {
         await link.save()
         res.status(201).json({ link })
     } catch (e) {
-        res.status(500).json({ message: 'Something goes wrong in process of POST */generate (router)*' })
+        console.log(e)
+        res.status(500).json({ message: 'Something goes wrong in process of POST */generate (router)*' })        
     }
 })
 

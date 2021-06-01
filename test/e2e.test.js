@@ -40,7 +40,7 @@ describe.only('e2e tests', () => {
             .set(
                 'Authorization', 'Bearer ' + token
             )
-            .send()
-        expect(responseCreateUrl.status).toBe(500) //Expect to be 201 *need to fix*
+            .send({ from: "https://github.com/" })
+        expect(responseCreateUrl.status).toBe(201) //Fixed
     })
 })
